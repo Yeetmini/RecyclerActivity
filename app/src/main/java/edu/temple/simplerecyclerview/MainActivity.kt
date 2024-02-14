@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         //Step 2: Provide a LayoutManager
         recyclerView.layoutManager = GridLayoutManager(this,2)
 
-
+        val numbers = arrayOf(1,100)
         //Step 4: Provide a RecyclerView.Adapter
-
+        recyclerView.adapter = NumberDisplayAdapter(numbers)
     }
 }
